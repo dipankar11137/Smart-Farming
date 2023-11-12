@@ -4,6 +4,7 @@
   transition-duration: 2s;
   transition: 0.7s;
   /* height: 400px; */
+  overflow: hidden;
 }
 
 .pic-style:hover {
