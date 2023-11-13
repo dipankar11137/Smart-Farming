@@ -10,7 +10,7 @@ const Farming = () => {
       <button className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]">
         <div class="containerSTyle">
           <img
-            className="w-full rounded-t-2xl md:h-[370px] hover:animate-pulse "
+            className="w-full rounded-t-2xl md:h-[320px] hover:animate-pulse "
             src="https://t4.ftcdn.net/jpg/00/77/38/33/360_F_77383324_Xv9xT7OWsminUVzqI0hTrRgfnoRBpbvC.jpg"
             alt=""
           />
@@ -31,7 +31,7 @@ const Farming = () => {
       <button className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]">
         <div class="containerSTyle">
           <img
-            className="w-full rounded-t-2xl md:h-[370px] hover:animate-pulse "
+            className="w-full rounded-t-2xl md:h-[320px] hover:animate-pulse "
             src="https://static.wixstatic.com/media/4c57d3_039297005d6d44afa33d7585c900aa0a~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
             alt=""
           />
@@ -53,7 +53,7 @@ const Farming = () => {
       <button className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]">
         <div class="containerSTyle">
           <img
-            className="w-full rounded-t-2xl md:h-[370px] hover:animate-pulse "
+            className="w-full rounded-t-2xl md:h-[320px] hover:animate-pulse "
             src="https://orthosongbad.com/wp-content/uploads/2020/03/corn.png"
             alt=""
           />
@@ -73,7 +73,7 @@ const Farming = () => {
       <button className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]">
         <div class="containerSTyle">
           <img
-            className="w-full rounded-t-2xl md:h-[370px] hover:animate-pulse "
+            className="w-full rounded-t-2xl md:h-[320px] hover:animate-pulse "
             src="https://www.nayashatabdi24.com/assets/news_photos/2022/01/09/image-37321-1641713060.jpg"
             alt=""
           />
@@ -94,7 +94,7 @@ const Farming = () => {
       <button className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]">
         <div class="containerSTyle">
           <img
-            className="w-full rounded-t-2xl md:h-[370px] hover:animate-pulse "
+            className="w-full rounded-t-2xl md:h-[320px] hover:animate-pulse "
             src="https://mzamin.com/news_image/189616_kolacase.jpg"
             alt=""
           />
@@ -114,7 +114,7 @@ const Farming = () => {
       <button className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]">
         <div class="containerSTyle">
           <img
-            className="w-full rounded-t-2xl md:h-[370px] hover:animate-pulse "
+            className="w-full rounded-t-2xl md:h-[320px] hover:animate-pulse "
             src="https://blogger.googleusercontent.com/img/a/AVvXsEjZXZEkTrrhayGnjBMusp8GhrVl5FuUSVQ1E-HUobegm0gmwAknelpvEzgM0Yep-X8RDfIetKEifOWIG9u_ku2lQPmZ1_2DzDVUv85jWH4kDSU5xDCtrW_H3TifZXS3L9Kzsdk4zTWdaMHjxbBG5fQhAWXobZrKgr95QVKPnx3HszW-N1H46qpsF3xBEA=w0"
             alt=""
           />
