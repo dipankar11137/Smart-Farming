@@ -1,6 +1,8 @@
 import React from "react";
-import Banner from "./Carusel/Banner";
-import Farmings from "./Farming/Farmings";
+import Footer from '../../Share/Footer';
+import Banner from './Carusel/Banner';
+import Contact from './Contact/Contact';
+import Farmings from './Farming/Farmings';
 import HappyClient from './HappyClient/HappyClient';
 
 const Home = () => {
@@ -10,6 +12,8 @@ const Home = () => {
       {/* <Weather/> */}
       <Farmings />
       <HappyClient />
+      <Contact />
+      <Footer />
     </div>
   );
 };

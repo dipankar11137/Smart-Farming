@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // const apiKey = '590c48cf16a9eb0eeef44fb1bfcce64f';
 const api = {
@@ -8,26 +8,34 @@ const api = {
 const Weather = () => {
   const [search, setSearch] = useState('Dhaka');
   const [weather, setWeather] = useState({});
+  const [weather1, setWeather1] = useState(false);
 
   /*
     Search button is pressed. Make a fetch call to the Open Weather Map API.
   */
   // const searchPressed = () => {
+  const showWeather = () => {
     fetch(`${api.base}weather?q=${search}&units=metric&APPID=${api.key}`)
       .then(res => res.json())
       .then(result => {
         setWeather(result);
+        setWeather1(true);
       });
+  };
   // };
-
-  
 
   return (
     <div className="py-10 bg-lime-700 text-center rounded-b-lg">
       <div className=" p-3">
         <header className="">
           {/* HEADER  */}
-          <h1 className="text-white">Weather  Now</h1>
+          {weather1 ? (
+            <h1 className="text-white">Weather Now</h1>
+          ) : (
+            <button onClick={showWeather} className="text-white ">
+              Show Weather
+            </button>
+          )}
 
           {/* Search Box - Input + Button  */}
           {/* <div>

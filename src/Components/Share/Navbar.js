@@ -60,7 +60,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="  navbar dark:bg-gray-800 dark:border-gray-700  text-white ">
+    <div className="  navbar bg-green-900  text-white ">
       <div className="navbar-start ">
         <div className="dropdown">
           <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -91,7 +91,7 @@ const Navbar = () => {
           className="btn btn-ghost normal-case font-bold lg:text-3xl  sm:text-sm text-amber-500"
         >
           <img className="h-12 mr-2" src="" alt="" />
-         Smart Farming
+          Smart Farming
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex lg:pr-36 ml-40">

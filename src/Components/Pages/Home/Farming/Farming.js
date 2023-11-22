@@ -1,13 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../../Css/ImageStyle.css';
 import './Farming.css';
 
 const Farming = () => {
+  const navigation = useNavigate();
+
+  const handlePaddy = () => {
+    navigation('/paddy');
+  };
   return (
     <div className="grid grid-cols-3 gap-x-20 gap-y-10">
       {/* ধান */}
 
-      <button className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]">
+      <button
+        onClick={handlePaddy}
+        className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]"
+      >
         <div class="containerSTyle">
           <img
             className="w-full rounded-t-2xl md:h-[320px] hover:animate-pulse "
