@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
         <Link
           to="/"
-          className="btn btn-ghost normal-case font-bold lg:text-3xl  sm:text-sm text-amber-500"
+          className="btn btn-ghost normal-case font-extrabold lg:text-3xl  sm:text-sm text-amber-500"
         >
           <img className="h-12 mr-2" src="" alt="" />
           Smart Farming
