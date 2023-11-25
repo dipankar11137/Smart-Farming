@@ -47,7 +47,7 @@ const Login = () => {
   return (
     <div
       style={{
-        backgroundImage: `url("https://wallpapers.com/images/hd/dark-sunset-sky-m8irpdem6awbfkpk.jpg")`,
+        backgroundImage: `url("https://w0.peakpx.com/wallpaper/260/414/HD-wallpaper-moon-on-the-dark-sky-nature-grass-sky-dark.jpg")`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -56,7 +56,7 @@ const Login = () => {
       }}
       className="flex justify-center h-screen bg-slate-700"
     >
-      <div className="mt-32  ">
+      <div className="mt-20  ">
         <div
           style={{
             backgroundImage: `url("https://c4.wallpaperflare.com/wallpaper/297/878/431/artstation-digital-art-building-night-moon-hd-wallpaper-preview.jpg")`,
