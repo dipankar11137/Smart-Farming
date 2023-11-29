@@ -7,6 +7,7 @@ import './App.css';
 import CreateAccount from './Components/Login/CreateAccount';
 import Login from './Components/Login/Login';
 import Blog from './Components/Pages/Blog/Blog';
+import Banana from './Components/Pages/Crops/Banana/Banana';
 import Chilies from './Components/Pages/Crops/Chilies/Chilies';
 import Corn from './Components/Pages/Crops/Corn/Corn';
 import Paddy from './Components/Pages/Crops/Paddy/Paddy';
@@ -29,6 +30,7 @@ function App() {
         <Route path="/wheat" element={<Wheat />}></Route>
         <Route path="/corn" element={<Corn />}></Route>
         <Route path="/chilies" element={<Chilies />}></Route>
+        <Route path="/banana" element={<Banana />}></Route>
         <Route path="/createAccount" element={<CreateAccount />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/*" element={<NotFound />}></Route>

@@ -109,7 +109,10 @@ const Farming = () => {
         </div>
       </button>
       {/* কলা */}
-      <button className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]">
+      <button
+        onClick={() => navigation('/banana')}
+        className="rounded-2xl shadow-2xl shadow-green-500 hover:shadow-inner hover:border-blue-500 border-[3px]"
+      >
         <div class="containerSTyle">
           <img
             className="w-full rounded-t-2xl md:h-[320px] hover:animate-pulse "
