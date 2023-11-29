@@ -7,8 +7,10 @@ import './App.css';
 import CreateAccount from './Components/Login/CreateAccount';
 import Login from './Components/Login/Login';
 import Blog from './Components/Pages/Blog/Blog';
+import Corn from './Components/Pages/Crops/Corn/Corn';
+import Paddy from './Components/Pages/Crops/Paddy/Paddy';
+import Wheat from './Components/Pages/Crops/Wheat/Wheat';
 import Home from './Components/Pages/Home/Home';
-import Paddy from './Components/Pages/Paddy/Paddy';
 import Navbar from './Components/Share/Navbar';
 import NotFound from './Components/Share/NotFound';
 AOS.init();
@@ -23,6 +25,8 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/blogs" element={<Blog />}></Route>
         <Route path="/paddy" element={<Paddy />}></Route>
+        <Route path="/wheat" element={<Wheat />}></Route>
+        <Route path="/corn" element={<Corn />}></Route>
         <Route path="/createAccount" element={<CreateAccount />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/*" element={<NotFound />}></Route>
