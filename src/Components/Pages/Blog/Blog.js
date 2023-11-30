@@ -208,7 +208,7 @@ const Blog = () => {
       {/* =============== */}
       <div>
         <h1 className="text-white text-center text-5xl  my-16 font-extrabold shadow-md py-2 shadow-slate-500">
-          Development Agriculture <span className="text-lime-200">Team</span>
+          Smart Farming <span className="text-lime-200">Team</span>
         </h1>
       </div>
 

@@ -53,7 +53,48 @@ const Chilies = () => {
           <p>জাত ভেদে শতক প্রতি ১০-১৫ গ্রাম ।</p>
         </div>
       </div>
-      {/* ------------------ */}
+      <div className="mt-10">
+        <h1 className="text-2xl">সার ব্যবস্থাপনাঃ</h1>
+        <h2 className="my-2 text-xl text-center text-red-200">
+          পরিমান/হেক্টর/ কেজি
+        </h2>
+        <div className="grid grid-cols-2 text-center text-xl font-semibold text-red-200">
+          <p className="border-2 border-r-0 border-white  py-5">সারের নাম</p>
+          <p className="border-2 border-white py-5">শতক প্রতি সার</p>
+        </div>
+
+        <div className="grid grid-cols-2 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            গোবর
+          </p>
+          <p className="border-2 border-t-0 border-white py-3">৪০ কেজি</p>
+        </div>
+        <div className="grid grid-cols-2 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            ইউরিয়া
+          </p>
+          <p className="border-2 border-t-0 border-white py-3">১.৬ কেজি</p>
+        </div>
+        <div className="grid grid-cols-2 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            টিএসপি
+          </p>
+          <p className="border-2 border-t-0 border-white py-3">১ কেজি</p>
+        </div>
+        <div className="grid grid-cols-2 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            পটাশ
+          </p>
+          <p className="border-2 border-t-0 border-white py-3">৬০০ গ্রাম</p>
+        </div>
+        <div className="grid grid-cols-2 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            জিপসাম
+          </p>
+          <p className="border-2 border-t-0 border-white py-3">২০০ গ্রাম</p>
+        </div>
+      </div>
+
       <div className="grid grid-cols-12 w-full mt-5">
         <div className="col-span-4 flex items-center">
           {' '}
