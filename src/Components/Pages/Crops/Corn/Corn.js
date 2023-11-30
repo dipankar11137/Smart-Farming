@@ -40,7 +40,113 @@ const Corn = () => {
           </p>
         </div>
       </div>
-      {/* --------------- */}
+
+      <div className="mt-10">
+        <h1 className="text-xl">
+          সার ব্যবস্থাপনাঃ ভুট্টা চাষে বিভিন্ন প্রকার সারের পরিমান নিচে দেওয়া
+          হলোঃ{' '}
+        </h1>
+        <h2 className="my-2 text-xl text-center text-red-200">
+          পরিমান/হেক্টর/ কেজি
+        </h2>
+        <div className="grid grid-cols-4 text-center text-xl font-semibold text-red-200">
+          <p className="border-2 border-r-0 border-white  py-3">সারের নাম</p>
+          <p className="border-2 border-r-0 border-white py-3">
+            কম্পোজিট <br /> রবি
+          </p>
+          <p className="border-2 border-r-0 border-white py-3">
+            কম্পোজিট <br /> খরিফ
+          </p>
+          <p className="border-2   border-white  py-3">
+            হাইব্রিড <br /> রবি
+          </p>
+        </div>
+
+        <div className="grid grid-cols-4 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            ইউরিয়া
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ১৭২-৩১২
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ২১৬-২৬৪
+          </p>
+          <p className="border-2 border-t-0  border-white  py-3">৫০০-৫৫০</p>
+        </div>
+        <div className="grid grid-cols-4 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            টিএসপি
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ১৬৮-২১৬
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ১৩২-২১৬
+          </p>
+          <p className="border-2 border-t-0  border-white  py-3">২৪০-২৬০</p>
+        </div>
+        <div className="grid grid-cols-4 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            এমপি
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ৯৬-১৪৪
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ৭২-১২০
+          </p>
+          <p className="border-2 border-t-0  border-white  py-3">১৮০-২২০</p>
+        </div>
+        <div className="grid grid-cols-4 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            জিপসাম
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ১৪৪-১৬৮
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ৯৬-১৪৪
+          </p>
+          <p className="border-2 border-t-0  border-white  py-3">২৪০-২৬০</p>
+        </div>
+        <div className="grid grid-cols-4 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            জিংকসালফেট
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ১০-১৫
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ৭-১২
+          </p>
+          <p className="border-2 border-t-0  border-white  py-3">১০-১৫</p>
+        </div>
+        <div className="grid grid-cols-4 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            বোরিকএসিড
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ৫-৭{' '}
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ৫-৭{' '}
+          </p>
+          <p className="border-2 border-t-0  border-white  py-3">৫-৭ </p>
+        </div>
+        <div className="grid grid-cols-4 text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white  py-3">
+            গোবর
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ৪-৬টন{' '}
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white py-3">
+            ৪-৬টন{' '}
+          </p>
+          <p className="border-2 border-t-0  border-white  py-3">৪-৬টন </p>
+        </div>
+      </div>
       <div className="grid grid-cols-12 w-full mt-5">
         <div className="col-span-4 flex items-center">
           {' '}
