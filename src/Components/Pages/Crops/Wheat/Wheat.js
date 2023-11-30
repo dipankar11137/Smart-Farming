@@ -123,14 +123,76 @@ const Wheat = () => {
           </p>
         </div>
       </div>
-      {/* <div>
-        <div class="grid grid-rows-3 grid-flow-col gap-4">
-          <div class="row-span-3 bg-red-200">01</div>
-          <div class="col-span-2 bg-green-300">02</div>
-          <div class=" col-span-2 bg-blue-400">03</div>
-          <div class=" col-span-2 bg-blue-400">03</div>
+      <div>
+        <div class="grid grid-rows-3 grid-flow-col mt-5 text-center text-xl font-semibold text-red-200">
+          <div class="row-span-3 border-2 border-r-0 border-white ">
+            <p className="mt-10">সারের নাম</p>
+          </div>
+          <div class="col-span-2 border-2 border-b-0 border-white">
+            <p className="py-2">সারের পরিমাণ/ হেক্টর</p>
+          </div>
+          <div class="row-span-2 col-span-2 border-2 border-white grid grid-cols-2">
+            <div className="border-r-2">
+              {' '}
+              <p className="mt-2">সেচ সহ (কেজি)</p>
+            </div>
+            <div>
+              <p className="mt-2">সেচ ছাড়া (কেজি)</p>
+            </div>
+          </div>
         </div>
-      </div> */}
+        <div className="flex text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[331px] py-3">
+            ইউরিয়া
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[395px] py-3">
+            ১৮০-২২০
+          </p>
+          <p className="border-2 border-t-0  border-white lg:w-[399px] py-3">
+            ১৪০-১৮০
+          </p>
+        </div>
+        <div className="flex text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[331px] py-3">
+            টিএসপি
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[395px] py-3">
+            ১৪০-১৮০
+          </p>
+          <p className="border-2 border-t-0  border-white lg:w-[399px] py-3">
+            ১৪০-১৮০
+          </p>
+        </div>
+        <div className="flex text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[331px] py-3">
+            এমপি
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[395px] py-3">
+            ৪০-৫০
+          </p>
+          <p className="border-2 border-t-0  border-white lg:w-[399px] py-3">
+            ৩০-৪০
+          </p>
+        </div>
+        <div className="flex text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[331px] py-3">
+            জিপসাম
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[395px] py-3">
+            ১১০-১২০
+          </p>
+          <p className="border-2 border-t-0  border-white lg:w-[399px] py-3">
+            ৭০-৯০
+          </p>
+        </div>
+        <div className="flex text-center text-lg">
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[331px] py-3">
+            গোবর/ কম্পোস্ট (টন)
+          </p>
+          <p className="border-2 border-t-0 border-r-0 border-white lg:w-[395px] py-3"></p>
+          <p className="border-2 border-t-0  border-white lg:w-[399px] py-3"></p>
+        </div>
+      </div>
 
       <div className="grid grid-cols-12 w-full mt-5">
         <div className="col-span-4 flex items-center">
