@@ -1,9 +1,8 @@
 import { signOut } from "firebase/auth";
 import React, { useEffect, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { FaHome } from "react-icons/fa";
-import { Link, useNavigate } from "react-router-dom";
-import auth from "../../firebase.init";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
@@ -16,38 +15,38 @@ const Navbar = () => {
 
   useEffect(() => {
     fetch(`https://boxberry.onrender.com/carBooking/${email}`)
-      .then((res) => res.json())
-      .then((data) => setBooking(data));
+      .then(res => res.json())
+      .then(data => setBooking(data));
   }, [booking]);
 
   const handleBook = () => {
-    navigate("/myOrders");
+    navigate('/myOrders');
   };
 
   const menuItems = (
     <>
-      <li className="font-bold hover:text-orange-400  text-xl">
+      {/* <li className="font-bold hover:text-orange-400  text-xl">
         <Link to="/">
           <FaHome />
         </Link>
-      </li>
-      <li className="font-bold hover:text-orange-400">
+      </li> */}
+      {/* <li className="font-bold hover:text-orange-400">
         <Link to="/blogs">Blogs</Link>
-      </li>
-      {user && (
+      </li> */}
+      {/* {user && (
         <li className="font-bold hover:text-orange-400">
           <Link to="/myOrders">My Orders</Link>
         </li>
-      )}
-      <li className="font-bold hover:text-orange-400">
+      )} */}
+      {/* <li className="font-bold hover:text-orange-400">
         <Link to="/showAllReview">Reviews</Link>
-      </li>
+      </li> */}
 
-      {user && (
+      {/* {user && (
         <li className="font-bold hover:text-orange-400">
           <Link to="/dashboard">Dashboard</Link>
         </li>
-      )}
+      )} */}
       {/* <li className=" font-bold">
         {user ? (
           <button className=" font-bold" onClick={logout}>
@@ -99,7 +98,7 @@ const Navbar = () => {
       </div>
       {/* Image */}
       <div className="navbar-end">
-        <label
+        {/* <label
           onClick={handleBook}
           tabindex="0"
           className="btn btn-ghost btn-circle mr-3"
@@ -123,7 +122,17 @@ const Navbar = () => {
               {booking.length}
             </span>
           </div>
-        </label>
+        </label> */}
+        <div className="font-bold hover:text-orange-400 mr-5">
+          <Link to="/blogs">Blogs1</Link>
+        </div>
+        <div className="font-bold hover:text-orange-400 mr-5">
+          <Link to="/treatment">Treatment of plants</Link>
+        </div>
+        <div className="font-bold hover:text-orange-400 mr-5">
+          <Link to="/blogs">Blogs</Link>
+        </div>
+
         {user ? (
           <div className="dropdown dropdown-end  mr-5">
             <label tabindex="0" className="btn btn-ghost btn-circle avatar">
