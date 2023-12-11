@@ -14,6 +14,7 @@ import Paddy from './Components/Pages/Crops/Paddy/Paddy';
 import Wheat from './Components/Pages/Crops/Wheat/Wheat';
 import Home from './Components/Pages/Home/Home';
 import AddDisease from './Components/Pages/Treatment/AddDisease';
+import ShowTreatment from './Components/Pages/Treatment/ShowTreatment';
 import Navbar from './Components/Share/Navbar';
 import NotFound from './Components/Share/NotFound';
 AOS.init();
@@ -32,6 +33,7 @@ function App() {
         <Route path="/corn" element={<Corn />}></Route>
         <Route path="/chilies" element={<Chilies />}></Route>
         <Route path="/banana" element={<Banana />}></Route>
+        <Route path="/showTreatment" element={<ShowTreatment />}></Route>
         <Route path="/treatment" element={<AddDisease />}></Route>
         <Route path="/createAccount" element={<CreateAccount />}></Route>
         <Route path="/login" element={<Login />}></Route>

@@ -124,7 +124,7 @@ const Navbar = () => {
           </div>
         </label> */}
         <div className="font-bold hover:text-orange-400 mr-5">
-          <Link to="/blogs">Blogs1</Link>
+          <Link to="/showTreatment">Show Treatment</Link>
         </div>
         <div className="font-bold hover:text-orange-400 mr-5">
           <Link to="/treatment">Treatment of plants</Link>
