@@ -1,4 +1,5 @@
 import React from 'react';
+import Solve from './Solve/Solve';
 
 const SolveDisease = () => {
   return (
@@ -73,7 +74,10 @@ const SolveDisease = () => {
                   className="modal-toggle"
                 />
                 <div className="modal" role="dialog">
-                  <div className=" mt-10 mb-10">{/* <Prescription /> */}</div>
+                  <div className=" mt-10 mb-10">
+                    {' '}
+                    <Solve />{' '}
+                  </div>
                 </div>
                 {/*  */}
               </td>
