@@ -93,9 +93,9 @@ const Navbar = () => {
           Smart Farming
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex lg:pr-36 ml-40">
+      {/* <div className="navbar-center hidden lg:flex lg:pr-36 ml-40">
         <ul className="menu menu-horizontal p-0">{menuItems}</ul>
-      </div>
+      </div> */}
       {/* Image */}
       <div className="navbar-end">
         {/* <label
@@ -123,6 +123,9 @@ const Navbar = () => {
             </span>
           </div>
         </label> */}
+        <div className="font-bold hover:text-orange-400 mr-5">
+          <Link to="/solveDiseases">Solve Diseases</Link>
+        </div>
         <div className="font-bold hover:text-orange-400 mr-5">
           <Link to="/showTreatment">Show Treatment</Link>
         </div>

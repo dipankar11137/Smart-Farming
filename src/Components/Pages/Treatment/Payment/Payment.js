@@ -52,7 +52,7 @@ const Payment = () => {
         <div className="modal-action fixed -top-[25px] right-[400px]">
           <label
             htmlFor="my_modal_6"
-            className="bg-white p-3 rounded-full cursor-pointer"
+            className="bg-white p-2 rounded-full cursor-pointer"
           >
             <FaTimes className="text-primary text-4xl" />
           </label>

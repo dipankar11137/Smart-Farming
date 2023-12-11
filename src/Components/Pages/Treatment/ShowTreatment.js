@@ -1,13 +1,16 @@
 import React from 'react';
 import Payment from './Payment/Payment';
+import Prescription from './Prescription/Prescription';
 
 const ShowTreatment = () => {
   return (
     <div className="h-screen">
-      <h1>Show Treatment</h1>
+      <h1 className="text-center text-5xl mt-4 font-bold mb-2 text-white">
+        Show Treatment
+      </h1>
 
       <div className="mx-20">
-        <table className="table w-full text-white">
+        <table className="table w-full text-white text-center">
           {/* head */}
           <thead>
             <tr>
@@ -34,13 +37,13 @@ const ShowTreatment = () => {
                   Lorem ipsum dolor sit amet. <br />
                 </p>
               </td>
+              {/* payment */}
               <td className="bg-green-800">
-                <button className="btn btn-primary btn-sm text-white">
+                <label
+                  htmlFor="my_modal_6"
+                  className="btn btn-primary btn-sm text-white"
+                >
                   payment
-                </button>
-                {/*  */}
-                <label htmlFor="my_modal_6" className="btn">
-                  open modal
                 </label>
 
                 {/* Put this part before </body> tag */}
@@ -63,15 +66,36 @@ const ShowTreatment = () => {
                 {/*  */}
               </td>
               <td className="bg-green-800">
-                <button className=" flex justify-center items-center gap-2 bg-secondary px-3 rounded-lg text-black font-bold uppercase">
-                  {' '}
+                <label
+                  htmlFor="my_modal_7"
+                  className=" flex justify-center items-center gap-2 bg-secondary px-3 rounded-lg text-black font-bold uppercase cursor-pointer"
+                >
                   <img
                     className="h-8"
                     src="https://media0.giphy.com/media/hTxQ11hK9e5HYoBwJI/giphy.gif"
                     alt=""
                   />{' '}
                   <p>prescription</p>
-                </button>
+                </label>
+
+                {/* Put this part before </body> tag */}
+                <input
+                  type="checkbox"
+                  id="my_modal_7"
+                  className="modal-toggle"
+                />
+                <div className="modal" role="dialog">
+                  <div className=" mt-10 mb-10">
+                    <Prescription />
+
+                    {/* <div className="modal-action">
+                      <label htmlFor="my_modal_6" className="btn">
+                        Close!
+                      </label>
+                    </div> */}
+                  </div>
+                </div>
+                {/*  */}
               </td>
             </tr>
           </tbody>
