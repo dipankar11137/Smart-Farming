@@ -29,7 +29,7 @@ const Payment = ({ id }) => {
   };
   const handleVCode = () => {
     const updatePayment = { payment: true };
-    fetch(`http://localhost:5000/treatmentPayment/${id}`, {
+    fetch(`http://localhost:5000/treatmentPayments/${id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
