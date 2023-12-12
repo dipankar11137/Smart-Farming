@@ -4,7 +4,7 @@ import { IoMdDownload } from 'react-icons/io';
 import generatePDF from 'react-to-pdf';
 import logo from '../.././../../Images/Logo/smart farming.png';
 
-const Prescription = () => {
+const Prescription = ({ treatment }) => {
   const targetRef = useRef();
   return (
     <div>
@@ -31,57 +31,77 @@ const Prescription = () => {
         </div>
         <hr />
         <div className="grid grid-cols-6">
-          <div className="col-span-2 border-r-[1px] border-slate-300 h-[485px] pl-2 pt-4">
-            <h1>Leaf Blights. </h1>
-            <h2>Rusts.</h2>
-            <h2>Powdery Mildew.</h2>
-            <h2>Downy Mildew</h2>
+          <div className="col-span-2 border-r-[1px] border-slate-300 h-[485px] pl-4 pt-4 text-start">
+            {treatment?.prescription?.disease1 && (
+              <h1>{treatment?.prescription?.disease1}</h1>
+            )}{' '}
+            {treatment?.prescription?.disease2 && (
+              <h1>{treatment?.prescription?.disease2}</h1>
+            )}{' '}
+            {treatment?.prescription?.disease3 && (
+              <h1>{treatment?.prescription?.disease3}</h1>
+            )}{' '}
           </div>
-          <div className="col-span-4 pl-2 pt-4">
+          <div className="col-span-4 pl-2 pt-4 text-start">
             <div className="w-[300px]">
-              <h1 className="font-semibold">1. Plant</h1>
-              <p className=" overflow-hidden pb-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                nesciunt a ea quidem hic illo iusto, deserunt ducimus expedita
-                placeat qui tempora beatae quaerat mollitia tempore officiis
-                vitae consectetur? Placeat!
-              </p>
+              {treatment?.prescription?.medicine1 && (
+                <>
+                  <h1 className="font-semibold">
+                    1. {treatment?.prescription?.medicine1}
+                  </h1>
+                  <p className=" overflow-hidden pb-2">
+                    {treatment?.prescription?.description1}
+                  </p>
+                </>
+              )}
             </div>
             <div className="w-[300px] mt-4">
-              <h1 className="font-semibold">2. Plant</h1>
-              <p className=" overflow-hidden pb-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                nesciunt a ea quidem hic illo iusto, deserunt ducimus expedita
-                placeat qui tempora beatae quaerat mollitia tempore officiis
-                vitae consectetur? Placeat!
-              </p>
+              {treatment?.prescription?.medicine2 && (
+                <>
+                  <h1 className="font-semibold">
+                    2. {treatment?.prescription?.medicine2}
+                  </h1>
+                  <p className=" overflow-hidden pb-2">
+                    {treatment?.prescription?.description2}
+                  </p>
+                </>
+              )}
             </div>
             <div className="w-[300px] mt-4">
-              <h1 className="font-semibold">3. Plant</h1>
-              <p className=" overflow-hidden pb-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                nesciunt a ea quidem hic illo iusto, deserunt ducimus expedita
-                placeat qui tempora beatae quaerat mollitia tempore officiis
-                vitae consectetur? Placeat!
-              </p>
+              {treatment?.prescription?.medicine3 && (
+                <>
+                  <h1 className="font-semibold">
+                    3. {treatment?.prescription?.medicine3}
+                  </h1>
+                  <p className=" overflow-hidden pb-2">
+                    {treatment?.prescription?.description3}
+                  </p>
+                </>
+              )}
             </div>
             <div className="w-[300px] mt-4">
-              <h1 className="font-semibold">4. Plant</h1>
-              <p className=" overflow-hidden pb-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                nesciunt a ea quidem hic illo iusto, deserunt ducimus expedita
-                placeat qui tempora beatae quaerat mollitia tempore officiis
-                vitae consectetur? Placeat!
-              </p>
+              {treatment?.prescription?.medicine4 && (
+                <>
+                  <h1 className="font-semibold">
+                    4. {treatment?.prescription?.medicine4}
+                  </h1>
+                  <p className=" overflow-hidden pb-2">
+                    {treatment?.prescription?.description4}
+                  </p>
+                </>
+              )}
             </div>
             <div className="w-[300px] mt-4">
-              <h1 className="font-semibold">5. Plant</h1>
-              <p className=" overflow-hidden pb-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-                nesciunt a ea quidem hic illo iusto, deserunt ducimus expedita
-                placeat qui tempora beatae quaerat mollitia tempore officiis
-                vitae consectetur? Placeat!
-              </p>
+              {treatment?.prescription?.medicine5 && (
+                <>
+                  <h1 className="font-semibold">
+                    5. {treatment?.prescription?.medicine5}
+                  </h1>
+                  <p className=" overflow-hidden pb-2">
+                    {treatment?.prescription?.description5}
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>

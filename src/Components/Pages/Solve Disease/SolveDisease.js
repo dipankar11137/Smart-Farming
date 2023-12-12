@@ -1,7 +1,14 @@
 import React from 'react';
 import Solve from './Solve/Solve';
 
-const SolveDisease = ({ treatment, handleClick, treatmentOne }) => {
+const SolveDisease = ({
+  treatment,
+  handleClick,
+  treatmentOne,
+  handleSolveId,
+  solveId,
+}) => {
+  // console.log(solveId);
   return (
     <tr>
       <td className="bg-green-800 ">
@@ -55,7 +62,7 @@ const SolveDisease = ({ treatment, handleClick, treatmentOne }) => {
             htmlFor="my_modal_7"
             className=" flex justify-center items-center gap-2 bg-secondary px-3 py-2 rounded-lg text-black font-bold uppercase cursor-pointer "
           >
-            <p>Solve Disease</p>
+            <p onClick={() => handleSolveId(treatment._id)}>Solve Disease</p>
           </label>
         )}
 
@@ -64,7 +71,7 @@ const SolveDisease = ({ treatment, handleClick, treatmentOne }) => {
         <div className="modal" role="dialog">
           <div className=" mt-10 mb-10">
             {' '}
-            <Solve id={treatment._id} />{' '}
+            <Solve id={solveId} />{' '}
           </div>
         </div>
         {/*  */}

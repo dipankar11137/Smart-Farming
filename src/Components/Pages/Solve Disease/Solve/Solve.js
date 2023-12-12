@@ -4,6 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
 const Solve = ({ id }) => {
+  // console.log(id);
   const {
     register,
     formState: { errors },
@@ -11,9 +12,8 @@ const Solve = ({ id }) => {
     reset,
   } = useForm();
   const onSubmit = data => {
-    const updateData = { data };
     const updatePrescription = { prescription: data };
-    console.log(updatePrescription);
+
     fetch(`http://localhost:5000/treatmentPrescription/${id}`, {
       method: 'PUT',
       headers: {
@@ -44,7 +44,7 @@ const Solve = ({ id }) => {
 
             <div>
               <h1 className="text-xl mb-2 pt-3 font-semibold">
-                Write Disease Name
+                Write Disease Name {id}
               </h1>
               <input
                 type="text"

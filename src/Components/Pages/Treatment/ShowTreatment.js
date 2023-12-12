@@ -102,7 +102,7 @@ const ShowTreatment = () => {
                   />
                   <div className="modal" role="dialog">
                     <div className=" mt-10 mb-10">
-                      <Prescription />
+                      <Prescription treatment={treatment} />
                     </div>
                   </div>
                   {/*  */}
