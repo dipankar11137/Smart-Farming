@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BiPhoneOutgoing } from 'react-icons/bi';
 import { FaTimes } from 'react-icons/fa';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-const Payment = () => {
-  const { id } = useParams('');
-  const [buyProduct, setBuyProduct] = useState({});
-  useEffect(() => {
-    fetch(`http://localhost:5000/buy/${id}`)
-      .then(res => res.json())
-      .then(data => setBuyProduct(data));
-  }, [buyProduct, id]);
+const Payment = ({ id }) => {
+  // const { id } = useParams('');
+  // const [buyProduct, setBuyProduct] = useState({});
+  // useEffect(() => {
+  //   fetch(`http://localhost:5000/buy/${id}`)
+  //     .then(res => res.json())
+  //     .then(data => setBuyProduct(data));
+  // }, [buyProduct, id]);
   const [numberButton, setNumberButton] = useState(true);
   const [password, setPassword] = useState(false);
   const [passwordButton, setPasswordButton] = useState(false);
@@ -29,7 +29,7 @@ const Payment = () => {
   };
   const handleVCode = () => {
     const updatePayment = { payment: true };
-    fetch(`http://localhost:5000/buyPayment/${id}`, {
+    fetch(`http://localhost:5000/treatmentPayment/${id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
@@ -39,12 +39,12 @@ const Payment = () => {
       .then(res => res.json())
       .then(data => {
         toast.success('Payment Successfully');
-        navigation('/myItem');
+        navigation('/showTreatment');
       });
   };
   const handleCancel = () => {
     toast.error('Payment Cancel');
-    navigation('/myItem');
+    navigation('/showTreatment');
   };
   return (
     <div className="flex justify-center mt-10 pb-20">
@@ -65,8 +65,8 @@ const Payment = () => {
           />
           <div className="mx-[50px] w-[400] h-[150px] shadow-black shadow-md mt-5 text-white text-xl pt-8 pl-4">
             <h1>Merchant : BLOODBANK.COM</h1>
-            <h1>Invoice No : {buyProduct?._id}</h1>
-            <h1>Amount : {buyProduct?.totalPrice}</h1>
+            <h1>Invoice No : </h1>
+            <h1>Amount : </h1>
           </div>
           <div className="text-center text-white mt-10 text-xl">
             <div>
