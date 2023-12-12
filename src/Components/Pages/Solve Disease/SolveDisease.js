@@ -1,7 +1,7 @@
 import React from 'react';
 import Solve from './Solve/Solve';
 
-const SolveDisease = ({ treatment }) => {
+const SolveDisease = ({ treatment, handleClick, treatmentOne }) => {
   return (
     <tr>
       <td className="bg-green-800 ">
@@ -9,14 +9,19 @@ const SolveDisease = ({ treatment }) => {
           htmlFor="my_modal_6"
           className="cursor-pointer flex justify-center"
         >
-          <img className="h-28 w-36 rounded-xl " src={treatment?.img} alt="" />
+          <img
+            onClick={() => handleClick(treatment._id)}
+            className="h-28 w-36 rounded-xl "
+            src={treatment?.img}
+            alt=""
+          />
         </label>
 
         {/* Put this part before </body> tag */}
         <input type="checkbox" id="my_modal_6" className="modal-toggle" />
         <div className="modal" role="dialog">
           <div className="modal-box">
-            <img className="" src={treatment?.img} alt="" />
+            <img className="" src={treatmentOne?.img} alt="" />
             <div className="modal-action">
               <label htmlFor="my_modal_6" className="btn">
                 Close!
