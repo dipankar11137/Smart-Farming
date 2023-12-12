@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { FaTimes } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 
-const Solve = () => {
+const Solve = ({ id }) => {
   const {
     register,
     formState: { errors },
@@ -11,8 +11,21 @@ const Solve = () => {
     reset,
   } = useForm();
   const onSubmit = data => {
-    toast.success('paice');
-    console.log(data);
+    const updateData = { data };
+    const updatePrescription = { prescription: data };
+    console.log(updatePrescription);
+    fetch(`http://localhost:5000/treatmentPrescription/${id}`, {
+      method: 'PUT',
+      headers: {
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(updatePrescription),
+    })
+      .then(res => res.json())
+      .then(data => {
+        toast.success(' Successfully  Update');
+        // navigation('/showTreatment');
+      });
   };
   return (
     <div>
