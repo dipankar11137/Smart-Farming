@@ -8,6 +8,7 @@ const ShowTreatment = () => {
   const [users] = useAuthState(auth);
   const email = users?.email;
   const [treatments, setTreatments] = useState([]);
+  const [cId, setCid] = useState();
 
   useEffect(() => {
     fetch(`http://localhost:5000/treatment/${email}`)
@@ -16,7 +17,7 @@ const ShowTreatment = () => {
   }, [treatments, email]);
 
   return (
-    <div className="h-screen">
+    <div className="pb-[800px]">
       <h1 className="text-center text-5xl mt-4 font-bold mb-2 text-white">
         Show Treatment
       </h1>
@@ -49,6 +50,7 @@ const ShowTreatment = () => {
                     </p>
                   ) : (
                     <label
+                      onClick={() => setCid(treatment?._id)}
                       htmlFor="my_modal_6"
                       className="btn btn-primary btn-sm text-white"
                     >
@@ -64,7 +66,7 @@ const ShowTreatment = () => {
                   />
                   <div className="modal" role="dialog">
                     <div className=" mt-20">
-                      <Payment id={treatment?._id} />
+                      <Payment id={cId} />
 
                       {/* <div className="modal-action">
                       <label htmlFor="my_modal_6" className="btn">

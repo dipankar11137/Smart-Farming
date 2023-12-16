@@ -28,13 +28,13 @@ const Payment = ({ id }) => {
     setVCode(true);
   };
   const handleVCode = () => {
-    const updatePayment = { payment: true };
+    const updatePayments = { payment: true };
     fetch(`http://localhost:5000/treatmentPayments/${id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
       },
-      body: JSON.stringify(updatePayment),
+      body: JSON.stringify(updatePayments),
     })
       .then(res => res.json())
       .then(data => {
