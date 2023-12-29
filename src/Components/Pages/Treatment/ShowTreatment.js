@@ -8,6 +8,7 @@ const ShowTreatment = () => {
   const [users] = useAuthState(auth);
   const email = users?.email;
   const [treatments, setTreatments] = useState([]);
+  const [treatmentId, setTreatmentId] = useState({});
   const [cId, setCid] = useState();
 
   useEffect(() => {
@@ -15,6 +16,12 @@ const ShowTreatment = () => {
       .then(res => res.json())
       .then(data => setTreatments(data));
   }, [treatments, email]);
+
+  const handlePrescription = async id => {
+    await fetch(`http://localhost:5000/treatmentId/${id}`)
+      .then(res => res.json())
+      .then(data => setTreatmentId(data));
+  };
 
   return (
     <div className="pb-[800px]">
@@ -79,17 +86,33 @@ const ShowTreatment = () => {
                 </td>
                 <td className="bg-green-800">
                   {treatment.payment ? (
-                    <label
-                      htmlFor="my_modal_7"
-                      className=" flex justify-center items-center gap-2 bg-secondary px-3 rounded-lg text-black font-bold uppercase cursor-pointer"
-                    >
-                      <img
-                        className="h-8"
-                        src="https://media0.giphy.com/media/hTxQ11hK9e5HYoBwJI/giphy.gif"
-                        alt=""
-                      />{' '}
-                      <p>prescription</p>
-                    </label>
+                    <>
+                      {treatment.prescription ? (
+                        <label
+                          onClick={() => handlePrescription(treatment?._id)}
+                          htmlFor="my_modal_7"
+                          className=" flex justify-center items-center gap-2 bg-secondary px-3 rounded-lg text-black font-bold uppercase cursor-pointer"
+                        >
+                          <img
+                            className="h-8"
+                            src="https://media0.giphy.com/media/hTxQ11hK9e5HYoBwJI/giphy.gif"
+                            alt=""
+                          />{' '}
+                          <p>prescription</p>
+                        </label>
+                      ) : (
+                        <div className="flex justify-center items-center gap-2 bg-green-400 px-3 rounded-lg text-black font-bold uppercase cursor-pointer">
+                          <h1 className=" flex justify-center items-center  px-3 rounded-lg text-black font-bold py-2 uppercase">
+                            Processing
+                          </h1>{' '}
+                          <img
+                            className="h-8"
+                            src="https://cdn.pixabay.com/animation/2023/03/20/02/45/02-45-27-186_512.gif"
+                            alt=""
+                          />
+                        </div>
+                      )}
+                    </>
                   ) : (
                     <p className="font-extrabold text-2xl text-red-700 bg-secondary rounded-lg cursor-not-allowed">
                       Pay First
@@ -104,7 +127,7 @@ const ShowTreatment = () => {
                   />
                   <div className="modal" role="dialog">
                     <div className=" mt-10 mb-10">
-                      <Prescription treatment={treatment} />
+                      <Prescription treatment={treatmentId} />
                     </div>
                   </div>
                   {/*  */}
