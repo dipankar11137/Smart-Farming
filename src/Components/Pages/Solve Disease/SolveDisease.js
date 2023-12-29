@@ -7,6 +7,7 @@ const SolveDisease = ({
   treatmentOne,
   handleSolveId,
   solveId,
+  handleDelete,
 }) => {
   // console.log(solveId);
   return (
@@ -54,7 +55,7 @@ const SolveDisease = ({
       </td>
       <td className="bg-green-800">
         {treatment.prescription ? (
-          <p className=" bg-white px-3 py-2 rounded-lg text-green-700 font-bold uppercase text-xl">
+          <p className=" bg-white px-3 py-1 rounded-lg text-green-700 font-bold uppercase text-xl">
             Solved
           </p>
         ) : (
@@ -75,6 +76,14 @@ const SolveDisease = ({
           </div>
         </div>
         {/*  */}
+      </td>
+      <td className="bg-green-800">
+        <button
+          onClick={() => handleDelete(treatment._id)}
+          className="btn btn-xs btn-primary"
+        >
+          remove
+        </button>
       </td>
     </tr>
   );
